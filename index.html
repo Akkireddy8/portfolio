@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akshitha Katyaini Reddy Akkireddy | Portfolio</title>
-    <link rel="logo" href="images/logo.gif" type="logo">
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- FIXED: "rel=logo" is invalid. Replaced with "rel=icon" if it's a favicon -->
+    <link rel="icon" href="images/logo.gif" type="image/gif" />
 </head>
 <body>
+
     <!-- Sidebar Section -->
     <div class="container">
         <div class="sidebar">
             <div class="profile">
-                <img src="images/profile.jpeg" alt="Profile Picture">
+                <img src="images/profile.jpeg" alt="Profile Picture" />
                 <h1>Akshitha Katyaini Reddy Akkireddy</h1>
                 <p id="typewriter-text">I'm a,&nbsp;<span id="roles"></span></p>
             </div>
+
             <div class="sidebar-nav">
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -25,41 +29,48 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
+
             <div class="sidebar-footer">
                 <div class="social-media">
-                    <a href="https://github.com/Akkireddy8/Akkireddy8" target="_blank"><img src="images/github.png" alt="GitHub"></a>
-                    <a href="https://www.linkedin.com/in/venkatesh-mudam-15b17357/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
-                    <a href="https://medium.com/@akshithareddya09" target="_blank"><img src="images/medium.png" alt="Medium"></a>
+                    <a href="https://github.com/Akkireddy8/Akkireddy8" target="_blank"><img src="images/github.png" alt="GitHub" /></a>
+                    <a href="https://www.linkedin.com/in/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+                    <a href="https://medium.com/@akshithareddya09" target="_blank"><img src="images/medium.png" alt="Medium" /></a>
                 </div>
-                    <!-- <a href="aswinigangaraju253@gmail.com" class="email-button">Email Me</a> -->
-                </div>
+                <!-- You can add an email button here if needed -->
             </div>
         </div>
     </div>
 
     <!-- Main Content Section -->
     <main>
-        <!-- About Section -->
+
+        <!-- ✅ FIXED: ID should be #about for correct sidebar navigation -->
         <section id="about" class="content-section">
             <h2>About</h2>
             <h4>
-                <img src="images/working-emoji.png" alt="working-emoji" class="icon">
-                 Senior Software Developer
+                <img src="images/working-emoji.png" alt="working-emoji" class="icon" />
+                Senior Java Full Stack Developer
             </h4>
-            <p>I am a passionate Full Stack Java Developer with 8+ years of experience in building, deploying and maintaining enterprise-level applications across diverse domains including education, healthcare, government, and banking.
-                <br> <br>
-                I have expertise in both frontend and backend technologies, including HTML5, CSS3, JavaScript, Angular, React, and Java frameworks like Spring Boot and Hibernate. Additionally, I have worked extensively with SQL, PostgreSQL, and NoSQL databases like MongoDB. 
-                <br><br>
-                I also have hands-on experience with cloud platforms such as AWS and Azure. As an AWS Certified Solutions Architect, I deliver scalable and efficient software solutions using cloud-native services. 
-                <br><br>
-                Currently, I am working as a Full Stack Java Developer at Cengage Learning, where I contribute to the InstructIQ Authoring Platform, a modern cloud-based platform that empowers educators to build dynamic learning experiences.
-                <br><br>
-                My strengths lie in creating reusable UI components using React and Angular, and developing secure microservices with Spring Boot, Spring Security, and Kafka to ensure seamless integration and communication across distributed systems.
+            <p>
+                I am an AWS Certified Solutions Architect and Senior Java Full Stack Developer with 8+ years of experience designing and developing scalable, secure, and high-performance enterprise applications across industries including education, healthcare, finance, and government.
+                <br /><br />
+                My technical expertise spans both frontend and backend development. I have built modern, responsive web applications using React.js, Angular, Redux, and RxJS, applying best practices in performance optimization, reusable UI component design, and accessibility.
+                <br /><br />
+                On the backend, I specialize in building RESTful APIs and microservices using Java 8/11/17, Spring Boot, Spring Security, and Hibernate ORM. I implement robust security mechanisms such as OAuth2, JWT, and OpenID Connect to enforce role-based access and authentication across systems.
+                <br /><br />
+                I bring hands-on experience with distributed architectures using Spring Cloud (Eureka, Config Server, Gateway, Feign) and integrate messaging systems like Apache Kafka, RabbitMQ, and ActiveMQ to support event-driven workflows.
+                <br /><br />
+                I work with relational and NoSQL databases such as PostgreSQL, MySQL, Oracle, and MongoDB, and leverage caching tools like Redis for enhanced backend performance.
+                <br /><br />
+                I’m experienced in deploying and maintaining services on cloud platforms including AWS and Azure, using tools like Jenkins, GitHub Actions, and Docker to automate CI/CD pipelines and ensure reliable delivery.
+                <br /><br />
+                Currently, I am working at Cengage Learning, where I contribute to the InstructIQ Authoring Platform — a cutting-edge cloud-based solution enabling educators to create interactive and personalized learning experiences at scale.
             </p>
         </section>
 
-        <!-- Experience Section -->
-        <h2>Experience</h2>
+        <!-- ✅ FIXED: Move Experience into its own section -->
+        <section id="experience" class="content-section">
+            <h2>Experience</h2>
             <div id="job">
                 <div class="job-entry-header">
                     <h3>Full Stack Java Developer</h3>
@@ -73,7 +84,7 @@
                     <h3>Full Stack Java Developer</h3>
                 </div>
                 <div class="job-details">
-                    <span id="client-name"><strong>USDA</strong></span>
+                    <span id="client-name"><strong>U.S Department of Agriculture</strong></span>
                     <span id="duration"><strong>Feb 2022 - May 2023</strong></span>
                 </div>
 
@@ -107,6 +118,7 @@
         <section id="skills" class="content-section">
             <h2>Skills</h2>
             <div class="skills-grid">
+                <!-- Your skills already included correctly -->
                 <div class="skills-item">Java</div>
                 <div class="skills-item">Spring Boot</div>
                 <div class="skills-item">Spring MVC</div>
@@ -139,7 +151,6 @@
                 <div class="skills-item">Agile</div>
                 <div class="skills-item">TDD</div>
                 <div class="skills-item">Jira</div>
-
             </div>
         </section>
 
@@ -154,7 +165,7 @@
                     <div class="education-details">
                         <span id="degree"><strong>Master's Degree, Applied Computer Science</strong></span>
                     </div>  
-                    <br><br>
+                    <br /><br />
                     <div class="education-university">
                         <h3>Jawaharlal Nehru Technological University</h3>
                     </div>
@@ -165,61 +176,45 @@
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact" class="content-section">
             <h2>Contact</h2>
             <p><b>If you'd like to get in touch with me, feel free to reach out through any of the following:</b></p>
-           
-                <b><strong>Email:</strong> <a href="mailto:akkireddya09@gmail.com">akkireddya09@gmail.com</a><br> <br>
-                <strong>Phone:</strong> +1 (660) 528-3384</b>
-            
+            <p>
+                <strong>Email:</strong> <a href="mailto:akkireddya09@gmail.com">akkireddya09@gmail.com</a><br /><br />
+                <strong>Phone:</strong> +1 (660) 528-3384
+            </p>
         </section>
-        <!-- Contact Section -->
-        <!-- <section id="contact" class="content-section">
-            <h2>Contact Me</h2>
-            <div class="contact-form">
-                <form action="https://api.web3forms.com/submit" method="POST">
-                    <div class="form-group">
-                        <input type="hidden" name="access_key" value="e91c86f0-84d8-465b-84a8-07290ce5a92c">
-                        <input type="text" name="name" placeholder="Full Name" class="contact-inputs" required>
-                        <input type="email" name="email" placeholder="Email" class="contact-inputs" required>
-                        <input type="text" name="subject" placeholder="Subject" class="contact-inputs" required>
-                        <textarea name="message" rows="5" placeholder="Message" class="contact-inputs" required></textarea>
-                        <button type="submit">Send Message</button>
-                    </div>
-                </form>
-            </div>
-        </section> -->
     </main>
 
+    <!-- Typewriter Script -->
     <script>
-        // Typewriter effect for roles
         const roles = ["Senior Software Developer"];
         const rolesElement = document.getElementById("roles");
         let roleIndex = 0;
         let charIndex = 0;
-    
+
         function typeRole() {
             if (charIndex < roles[roleIndex].length) {
                 rolesElement.textContent += roles[roleIndex].charAt(charIndex);
                 charIndex++;
-                setTimeout(typeRole, 100); // Typing speed
+                setTimeout(typeRole, 100);
             } else {
-                setTimeout(eraseRole, 1500); // Pause before erasing
+                setTimeout(eraseRole, 1500);
             }
         }
-    
+
         function eraseRole() {
             if (charIndex > 0) {
                 rolesElement.textContent = roles[roleIndex].substring(0, charIndex - 1);
                 charIndex--;
-                setTimeout(eraseRole, 50); // Erasing speed
+                setTimeout(eraseRole, 50);
             } else {
-                roleIndex = (roleIndex + 1) % roles.length; // Move to the next role
-                setTimeout(typeRole, 500); // Pause before typing the next role
+                roleIndex = (roleIndex + 1) % roles.length;
+                setTimeout(typeRole, 500);
             }
         }
-    
-        // Start the typewriter effect
+
         document.addEventListener("DOMContentLoaded", () => {
             typeRole();
         });
